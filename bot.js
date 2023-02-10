@@ -55,7 +55,7 @@ client.on("messageCreate", (message) => {
 			);
 		}
 
-		nextMessageTime.setMinutes(nextMessageTime.getMinutes() + 15);
+		nextMessageTime.setMinutes(nextMessageTime.getMinutes() + 135);
 		const timeUntilNextMessage = nextMessageTime - now;
 		const hours = Math.floor(timeUntilNextMessage / (60 * 60 * 1000));
 		const minutes = Math.floor(

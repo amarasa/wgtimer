@@ -21,6 +21,13 @@ const messageTimes = [
 
 client.on("ready", () => {
 	console.log(`Logged in as ${client.user.tag}!`);
+	client.user.setPresence({
+		activity: {
+			name: "Wintergrasp Timer",
+			type: "PLAYING",
+		},
+		status: "online",
+	});
 });
 
 client.on("messageCreate", (message) => {
